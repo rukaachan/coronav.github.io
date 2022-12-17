@@ -404,14 +404,14 @@ nav .nama {
     }
 
     .short-info .short-text {
-        width: 40vw;
+        width: 50vw;
         padding-left: 6vh;
         height: 100%;
         float: left;
     }
 
     .short-text span {
-        font-size: 15px;
+        font-size: 5vw;
     }
 
     .vaksin-txt div {
@@ -438,15 +438,15 @@ nav .nama {
 
     .short-info .short-btn {
         display: inline;
-        width: 40vw;
+        width: 62vw;
         padding-right: 6vh;
         float: right;
         text-align: right;
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .short-btn span {
-        font-size: 3vw;
+        font-size: 5vw;
     }
 
     .short-btn button {
@@ -492,6 +492,5 @@ nav .nama {
         object-fit: cover;
         border-radius: 30px;
     }
-
 
 }
