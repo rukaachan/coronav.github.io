@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    width: auto;
+}
+
+
+
+/* Navbar  */
+:root {
+    --text-warna: #fff;
+    --navbar-warna: #000;
+    --red-navbar: #FF0000;
+}
+
+body {
+    height: 100%;
+    background-image: url("img/bgform.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    position: sticky;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    padding: 25px 0;
+    background-color: var(--red-navbar);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    padding: 0 10px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: var(--text-warna);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+nav .nama {
+    letter-spacing: 3px;
+    color: var(--text-warna);
+    font-size: 1rem;
+}
+
+.home-container {
+    height: 90vh;
+}
+
+.home-content .slides {
+    height: 48vh;
+}
+
+.slides .poster {
+    height: 42vh;
+    width: 60%;
+    margin: 6vh auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.poster img {
+    width: 100%;
+    height: 42vh;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.home-content .short-info {
+    height: 24vh;
+    margin-top: 5vh;
+}
+
+.short-info .short-text {
+    width: 45vh;
+    padding-left: 6vh;
+    height: 100%;
+    float: left;
+}
+
+.short-text span {
+    font-size: 42px;
+}
+
+.short-info .short-btn {
+    width: 72vh;
+    padding-right: 6vh;
+    height: 100%;
+    float: right;
+    text-align: right;
+}
+
+.short-btn span {
+    font-size: 30px;
+}
+
+.short-btn button {
+    width: 100%;
+    height: 8vh;
+    margin-top: 12px;
+    font-size: 28px;
+    background: lightblue;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.berita-content {
+    height: 154vh;
+    overflow: hidden;
+}
+
+.berita-content .stat-img {
+    width: 100%;
+    height: 30vh;
+}
+
+.stat-img img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.berita-content .stats {
+    display: flex;
+}
+
+.berita-content .stats .stat {
+    width: calc(33% + 3px);
+    height: 34vh;
+    text-align: center;
+}
+
+.stat .stat-header {
+    font-size: 28px;
+    margin: 1vh 0 10vh;
+}
+
+.stat .stat-count {
+    font-size: 32px;
+    margin: 0 0 2vh;
+}
+
+.stat .stat-people {
+    font-size: 26px;
+}
+
+.berita-content .news {
+    height: 88vh;
+}
+
+.news .news-header {
+    margin: 2vh 0 6vh 3vh;
+    font-size: 26px;
+}
+
+.news .news-box {
+    width: 92%;
+    height: 30vh;
+    margin: 0 auto 4vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.news-box .news-img {
+    width: 100%;
+    height: 18vh;
+}
+
+.news-img img {
+    width: 100%;
+    height: 18vh;
+    object-fit: cover;
+}
+
+.news-box .news-desc {
+    width: 100%;
+    height: 12vh;
+}
+
+.news-desc .waktu {
+    padding: 6px 18px;
+    opacity: 60%;
+}
+
+.news-desc .judul {
+    font-weight: bold;
+}
+
+.news-desc .judul,
+.news-desc .subjudul {
+    padding-left: 18px;
+}
+
+.news-footer {
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.news-footer .garis {
+    border: 1px solid black;
+    width: 72%;
+}
+
+.news-footer .see-more {
+    font-size: 20px;
+}
+
+.vaksin-container {
+    height: 60vh;
+    width: 100%;
+}
+
+.vaksin-content {
+    display: flex;
+}
+
+.vaksin-poster {
+    width: 48%;
+    margin-left: 10%;
+}
+
+.vaksin-poster img {
+    width: 80%;
+    height: 50vh;
+    object-fit: contain;
+    padding: 5vh 1vh;
+    margin: auto;
+    display: block;
+}
+
+.vaksin-txt {
+    width: 45%;
+}
+
+.vaksin-txt div {
+    font-size: 60px;
+    width: 30%;
+    margin: 10% 6px 0 0;
+}
+
+.vaksin-txt button {
+    width: 50%;
+    height: 12vh;
+    margin-top: 12px;
+    font-size: 28px;
+    background: lightblue;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.footer-container {
+    background-color: lightcoral;
+    height: 24vh;
+}
+
+.footer-content {
+    padding-top: 18px;
+}
+
+.footer-content .garis {
+    border: 1px solid black;
+    width: 78%;
+    margin: auto;
+}
+
+.footer-content .texts {
+    margin-top: 12px;
+}
+
+.footer-content .cr {
+    text-align: center;
+    margin-top: 2px;
+}
+
+.footer-content .socmed {
+    width: 220px;
+    margin: 10px auto;
+}
+
+.footer-content .socmed img {
+    width: 36px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+/* burger */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    top: -0.5px;
+    right: -5.5px;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/* hambuger menu animation */
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+    transform: rotate(45deg) translate(-3px, 2px);
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+    transform: rotate(-45deg) translate(-3px, 1px);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0)
+}
+
+/* tablet */
+@media screen and (max-width: 724px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+
+/* mobile (hp) */
+@media screen and (max-width : 576px) {
+    .content h2 {
+        margin-top: 190px;
+    }
+
+    nav ul li a:hover:after {
+        width: 0;
+    }
+
+    .dropdown:hover {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        position: fixed;
+        display: block;
+        padding-top: 90px;
+        right: auto;
+        top: 0;
+        width: 100%;
+        height: 190px;
+        background-color: var(--red-navbar);
+        z-index: -1;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transition: all 0.5s;
+        right: -100%;
+    }
+
+    nav ul.slide {
+        right: 0;
+        opacity: 1;
+    }
+
+
+    .short-text span {
+        font-size: 15px;
+    }
+
+    .vaksin-txt div {
+        font-size: 30px;
+        width: 30%;
+        margin: 60% 6px 0 0;
+    }
+
+
+    .vaksin-txt {
+        font-size: 20px;
+        width: 50%;
+    }
+
+    .vaksin-txt button {
+        font-size: 5vw;
+    }
+
+    .news-footer .garis {
+        display: none;
+    }
+
+    .short-info .short-btn {
+        width: 30vh;
+        padding-right: 6vh;
+        height: 100%;
+        float: right;
+        text-align: right;
+    }
+
+    .short-btn span {
+        font-size: 15px;
+    }
+
+
+    /* img {
+        display: none;
+    } */
+
+}
