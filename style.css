@@ -435,6 +435,8 @@ nav .nama {
 
     .vaksin-txt button {
         font-size: 5vw;
+        width: 130px;
+        height: 50px;
     }
 
     .news-footer .garis {
@@ -466,7 +468,7 @@ nav .nama {
 
     .stat-img img {
         margin-top: 40px;
-        width: 310px;
+        width: 350px;
         height: 150px;
     }
 
