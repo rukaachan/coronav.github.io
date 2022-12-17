@@ -130,7 +130,7 @@ nav .nama {
 
 .berita-content {
     height: 154vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .berita-content .stat-img {
@@ -139,7 +139,8 @@ nav .nama {
 }
 
 .stat-img img {
-    width: 100%;
+    top: 190px;
+    width: 1200px;
     height: 30vh;
     object-fit: cover;
 }
@@ -444,7 +445,6 @@ nav .nama {
         display: inline;
         width: 40vw;
         padding-right: 6vh;
-        height: 100%;
         float: right;
         text-align: right;
         margin-top: 100px;
@@ -455,21 +455,28 @@ nav .nama {
     }
 
     .short-btn button {
-        font-size: 5vw;
+        font-size: 3vw;
+        width: 90px;
+        height: 40px;
     }
 
-
-    .berita-content .stat-img {
-        margin-left: 20px;
-        width: 100%;
-        height: 30vh;
+    .berita-container {
+        position: relative;
     }
-
 
     .stat-img img {
-        height: 30vh;
-        right: 900px;
-        object-fit: fill;
+        margin-top: 40px;
+        width: 310px;
+        height: 150px;
     }
+
+    .stat .stat-header, .stat .stat-count, .stat .stat-people {
+        font-size: 15px;
+        margin-left: 15px;
+        display: block;
+        visibility: visible;
+    }
+
+
 
 }
